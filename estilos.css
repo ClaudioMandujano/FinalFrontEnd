@@ -1,0 +1,62 @@
+
+.hero h1{
+    font-size: 30;
+    color: #ffffff;
+    position: relative;  
+}
+
+.hero h4 {   
+  font-size: 20px;
+  color: #ffffff;
+  position: relative;    
+}
+
+.barra{
+    display: flex;
+    justify-content: end;
+}
+
+.texthero{
+   position: absolute;
+   top: 70%;
+   left: 65%;
+   transform: translate(-50%, -50%);  
+   text-align: end;
+}
+
+.titcard{        
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;       
+}
+
+.boton{
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 2px;
+ padding-right: 2px;
+ font-weight: bold;
+}
+.parte3{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.parte3 p{
+text-align: left;
+}
+
+.parte3 h4{
+padding-top: 20px;
+}
+
+footer{    
+    height: 80px; 
+    text-align: center;
+    background: linear-gradient(to right, #03415D , #055B81);
+    margin: auto;
+    padding: 20px;
+    font-weight: bolder;     
+}
+
+
