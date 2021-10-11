@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico Integrador Front End</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css"> 
+</head>
+<body>
+        <!--  INICIO NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/codoacodo.png" alt="" width="100" height="60" class="d-inline-block align-text-center">
+           Conf Bs As 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse barra" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: green;" href="carrito.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--  TERMINO DE NAVBAR -->  
+        <!-- CARDS  -->
+
+    <div class="container">
+       
+        <div class="row row-cols-1 row-cols-md-3 g-2 mt-2 mb-2 cartaitem">
+            <div class="col">
+              <div class="card h-100 border-primary cartaitem">                
+                <div class="card-body">
+                  <h4 class="card-title mb-3">Estudiante</h4>
+                  <p class="card-text mb-4">Tienen un descuento</p>
+                  <h5 class="card-subtitle mb-4">80%</h5>
+                  <small class="text-muted">* presentar documentación</small>
+                </div>                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-info cartaitem">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Trainee</h4>
+                    <p class="card-text mb-4">Tienen un descuento</p>
+                    <h5 class="card-subtitle mb-4">50%</h5>
+                    <small class="text-muted">* presentar documentación</small>
+                </div>                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning cartaitem">                
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Junior</h4>
+                    <p class="card-text mb-4">Tienen un descuento</p>
+                    <h5 class="card-subtitle mb-4">15%</h5>
+                    <small class="text-muted">* presentar documentación</small>
+                </div>                
+              </div>
+            </div>
+          </div>
+   
+          <!--  INICIO FORMULARIO -->
+            <div class="row tituloform">
+            <div class="col-12 ">
+                    <p>VENTA</p>
+            </div>
+              <div class="col-12"> 
+                  <h1>VALOR DE TICKET $200</h1> 
+                </div>
+            </div>
+
+   
+    <form class="row g-3 mt-2 mb-5">
+        <div class="col-md-6 col-sm-12">          
+          <input type="text" class="form-control nombre" id="nombre" name="nombre" placeholder="Nombre">
+        </div>
+        <div class="col-md-6 col-sm-12">        
+          <input type="text" class="form-control apellido" id="apellido" name="apellido" placeholder="Apellido">
+        </div>
+        <div class="col-12">         
+          <input type="email" class="form-control mail" id="mail" name="mail" placeholder="Correo">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Cantidad</label>
+            <input type="text" class="form-control" id="cantidad" value="0" name="cantidad" placeholder="Cantidad">
+          </div>                  
+            <div class="col-md-6 position-relative">
+
+                <label for="categoria" class="form-label">Categoria</label>
+                <select class="form-select categoria" name="categoria" id="categoria" required>                 >
+                  <option selected value="estudiante">Estudiante</option>
+                  <option value="trainee">Trainee</option>
+                  <option value="junior">Junior</option>
+                </select>                
+              </div>     
+              <div class="col-12 ">                
+                <p class= "form-control bg-primary p-2 text-dark bg-opacity-25" id="resultado"> Total a pagar: 0 $</p>
+              </div>     
+              <div class="col-6">                
+                  <button class="form-control btn text-white" style="background-color:yellowgreen;" type="reset">Borrar</button>                   
+                </div>
+                <div class="col-6">
+                    <button class="form-control btn text-white" id="boton" style="background-color:yellowgreen;" type="button">Resumen</button>    
+                </div>                  
+      </form>
+      
+</div>
+
+
+           <!--  PARTE 5  -- FOTTER -->
+           <footer class="bg-dark text-white">
+            <div class="container">
+             <nav class="row">
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold text-wrap" style="width: 6rem">Preguntas frecuentes</li>
+               </ul>
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold ">Contáctanos</li>
+               </ul>
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold ">Prensa</li>
+               </ul>
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold ">Conferencias</li>
+               </ul>
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold text-wrap"style="width: 6rem"><a>Términos y condiciones</a></li>
+               </ul>
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold ">Privacidad</li>
+               </ul>
+               <ul class="col list-unstyled">
+                 <li class="font-weight-bold">Estudiantes</li>
+               </ul>
+             </nav>
+            </div>
+          </footer>
+   
+   
+          <script src="tickets.js"></script>
+       <!-- Link boostrap -->
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+   </body>
+   </html>

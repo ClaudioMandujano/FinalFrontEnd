@@ -16,6 +16,10 @@
     justify-content: end;
 }
 
+.verde{
+    color: green;
+}
+
 .texthero{
    position: absolute;
    top: 70%;
@@ -60,3 +64,15 @@ footer{
 }
 
 
+/* PARTE 2 CARRITO CARDS */
+
+.tituloform{
+    text-align: center;
+}
+.cartaitem{
+  
+    text-align: center;
+}
+.formulario{
+    text-align: start;
+}
