@@ -23,9 +23,14 @@ function calcular(){
         console.log(resultado);
 }
 
+function limpiar(){
+    let resultado = document.getElementById('resultado');
+     resultado.innerHTML = 'Total a pagar:  ' + 0 +'$';  
+}
 
 
 const boton = document.getElementById('boton');
 boton.addEventListener('click',calcular);
 
-
+const btnres = document.getElementById('reset')
+btnres.addEventListener('click',limpiar)
